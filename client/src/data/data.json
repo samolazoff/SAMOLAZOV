@@ -1,0 +1,24 @@
+{
+    "navigation":[
+        {
+            "title":"about",
+            "path": "/"
+        },
+        {
+            "title":"work",
+            "path":"/work"
+        },
+        {
+            "title":"services",
+            "path":"/services"
+        },
+        {
+            "title":"contacts",
+            "path":"/contacts"
+        },
+        {
+            "title":"blog",
+            "path":"/blog"
+        }
+    ]
+}

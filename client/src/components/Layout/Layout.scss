@@ -1,10 +1,4 @@
-@use '../../styles/vars';
-
-*{
-    -webkit-user-drag: none;
-    margin: 0;
-    padding: 0;
-}
+@use '../../styles/reset';
 
 #root{
     max-width: 1400px;
