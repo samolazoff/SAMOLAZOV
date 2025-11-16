@@ -5,7 +5,7 @@ import { Outlet } from 'react-router';
 const Layout = () => {
     return (
         <>
-           <main className='app container'>
+            <main className='app-main'>
                 <Outlet />
             </main>
         </>
