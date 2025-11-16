@@ -1,0 +1,49 @@
+@use '../../styles/vars';
+
+*{
+    -webkit-user-drag: none;
+}
+
+#root{
+    @include flex($dir: column, $jc: space-between, $ai: center);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(228, 231, 233, 0.3) ;
+}
+
+.app{
+    width: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.d-none{
+    display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        max-width: 992px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 576px;
+    }
+}
