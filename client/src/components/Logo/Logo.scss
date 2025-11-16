@@ -1,0 +1,15 @@
+.logo{
+    width: 350px;
+    height: 100px;
+    background-image: url('../../assets/images/logo/samolazov_logo_colorful-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 175px;
+        height: 50px;
+    }
+}
