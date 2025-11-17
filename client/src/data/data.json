@@ -2,23 +2,19 @@
     "navigation":[
         {
             "title":"about",
-            "path": "/"
+            "link": "/"
         },
         {
             "title":"work",
-            "path":"/work"
-        },
-        {
-            "title":"services",
-            "path":"/services"
+            "link":"/work"
         },
         {
             "title":"contacts",
-            "path":"/contacts"
+            "link":"/contacts"
         },
         {
             "title":"blog",
-            "path":"/blog"
+            "link":"/blog"
         }
     ]
 }

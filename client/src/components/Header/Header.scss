@@ -2,11 +2,46 @@
     @include flex($dir: row, $jc: space-between, $ai: center);
     width: 100%;
     &-nav{
+            display: flex;
             @include flex($dir: row, $jc: space-between, $ai: center);
-            gap: 2em;
+            gap: 1.5em;
         &-items{
             @include flex($dir: row, $jc: space-between, $ai: center);
             gap: 1.5em;
         }
+    }
+}
+
+.wrap-hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .app-header{
+        position: relative;
+        &-nav{
+                position: absolute;
+                top: -10px;
+                right: -20px;
+                @include flex($dir: column, $jc: center, $ai: flex-end);
+                width: 350px;
+                height: 100vh;
+                gap: 1.5em;
+                background-color: $soft;
+            &-items{
+                @include flex($dir: column, $jc: center, $ai: center);
+                width: 100%;
+                gap: 1.5em;
+            }
+            &-ds{
+                display: none;
+            }
+        }
+    }
+   .wrap-hamburger{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
     }
 }

@@ -13,3 +13,21 @@
         color: $soft;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .nav-item{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item{
+       font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-item{
+       font-size: 1.2em;
+    }
+}
