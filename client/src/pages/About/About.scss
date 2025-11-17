@@ -1,0 +1,20 @@
+.app-about{
+    @include flex($dir: row, $jc: space-between, $ai: center);
+    width: 100%;
+    &-content{
+        @include flex($jc: center, $ai: flex-start);
+        gap: .5em;
+        max-width: 570px;
+        &__txt{
+            font-size: 1.5em;
+            letter-spacing: 1.5px;
+            &_right{
+            width: 100%;
+               text-align: right;
+            }
+        }
+        button, a{
+            align-self: center;
+        }
+    }
+}

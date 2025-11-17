@@ -1,0 +1,15 @@
+.app-btn{
+    margin-top: 1em;
+    font-size: 1.8em;
+    color: $primery;
+    background-color: $btn-background;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: .25s;
+    &:hover{
+        background-color: $hover;
+    }
+    &:active{
+        background-color: $soft;
+    }
+}
