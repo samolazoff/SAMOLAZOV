@@ -1,7 +1,7 @@
 .app-btn{
     margin-top: 1em;
-    font-size: 1.8em;
-    color: $primery;
+    font-size: 1.5em;
+    color: #000000;
     background: -webkit-linear-gradient(90deg, #3a7afe,#8a5cf6,#ff6ac1);
     background: linear-gradient(90deg, #3a7afe,#8a5cf6,#ff6ac1);
     padding: 10px 30px;
@@ -14,5 +14,19 @@
     &:active{
         background-color: $soft;
         background: linear-gradient(90deg,  $soft);
+    }
+}
+@media screen and (max-width: 992px) {
+   .app-btn{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    .app-btn{
+        font-size: 1.2em;
     }
 }
