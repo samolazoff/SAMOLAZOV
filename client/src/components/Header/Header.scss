@@ -24,10 +24,11 @@
                 top: -10px;
                 right: -20px;
                 @include flex($dir: column, $jc: center, $ai: flex-end);
-                width: 350px;
+                width: 100vw;
                 height: 100vh;
                 gap: 1.5em;
                 background-color: $soft;
+                z-index:2;
             &-items{
                 @include flex($dir: column, $jc: center, $ai: center);
                 width: 100%;
@@ -44,4 +45,7 @@
         top: 0px;
         right: 0px;
     }
+}
+.wrap-hamburger{
+    z-index: 9999;
 }

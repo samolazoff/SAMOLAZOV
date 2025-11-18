@@ -5,3 +5,18 @@
     font-weight: 600;
     color: $primery;
 }
+
+@media screen and (max-width: 992px) {
+    .subtitle-block{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    .subtitle-block{
+        font-size: 2em;
+    }
+}

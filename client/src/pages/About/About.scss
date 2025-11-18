@@ -1,5 +1,5 @@
 .app-about{
-    @include flex($dir: row, $jc: space-between, $ai: center);
+    @include flex($dir: row, $jc: space-around, $ai: center);
     width: 100%;
     &-content{
         @include flex($jc: center, $ai: flex-start);
@@ -15,6 +15,50 @@
         }
         button, a{
             align-self: center;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .app-about{
+        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app-about{
+        &-content__txt{
+            font-size: 1.3em;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-about{
+        &__img{
+            width: 250px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .app-about{
+        position: relative;
+        padding-top: 150px;
+        @include flex($jc: center, $ai: center);
+        &-content{
+            position: relative;
+            max-width: 400px;
+        }
+        
+        &-content__txt{
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+        &__img{
+            position: absolute;
+            top: 5px;
+            z-index: 0;
         }
     }
 }
