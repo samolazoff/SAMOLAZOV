@@ -1,0 +1,26 @@
+.app-footer{
+    @include flex($dir: row, $jc: space-between, $ai: center);
+    flex-wrap: wrap;
+    grid-area: 2em;
+    margin-top: 4em;
+    padding: 2.5em 10em;
+    border-top: 2px solid $border;
+    &-author{
+        @include flex($dir: row, $jc: center, $ai: center);
+        gap: .5em;
+        font-size: 1.5em;
+        color: $primery;
+        a:hover{
+                color: $hover;
+            }
+        &-wrap{
+            @include flex();
+        }
+    }
+    &-nav{
+        &-items{
+            @include flex();
+            gap: .5em;
+        }
+    }
+}
