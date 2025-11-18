@@ -1,10 +1,20 @@
 .app-about{
     @include flex($dir: row, $jc: space-around, $ai: center);
     width: 100%;
+    padding: 2.5em 0;
+    border-top: 2px solid $border;
+    background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 100%;
     &-content{
         @include flex($jc: center, $ai: flex-start);
         gap: .5em;
         max-width: 570px;
+        background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-position-x: 80%;
+        background-position-y: 20%;
         &__txt{
             font-size: 1.5em;
             letter-spacing: 1.5px;
@@ -19,7 +29,10 @@
     }
 }
 @media screen and (max-width: 992px) {
+    
     .app-about{
+        background-position-x: 50%;
+        background-position-y: 50%;
         &-content__txt{
             font-size: 1.3em;
         }
@@ -27,7 +40,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .app-about{
+    .app-about{ 
+        background-image: none;
         &__img{
             width: 250px;
         }
@@ -43,6 +57,7 @@
         &-content{
             position: relative;
             max-width: 400px;
+            background-image: none;
         }
         
         &-content__txt{

@@ -1,6 +1,11 @@
 .app-header{
     @include flex($dir: row, $jc: space-between, $ai: center);
     width: 100%;
+    background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 50%;
+    background-size: contain;
     &-nav{
             display: flex;
             @include flex($dir: row, $jc: space-between, $ai: center);
@@ -19,6 +24,7 @@
 @media screen and (max-width: 768px) {
     .app-header{
         position: relative;
+        background-image: none;
         &-nav{
                 position: absolute;
                 top: -10px;
@@ -30,6 +36,10 @@
                 background-color: $soft;
                 z-index:2;
             &-items{
+                background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+                background-repeat: no-repeat;
+                background-position-x: 30%;
+                background-position-y: 0%;
                 @include flex($dir: column, $jc: center, $ai: center);
                 width: 100%;
                 gap: 1.5em;

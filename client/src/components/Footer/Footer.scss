@@ -1,15 +1,20 @@
 .app-footer{
     @include flex($dir: row, $jc: space-between, $ai: center);
+    gap: 2em;
     flex-wrap: wrap;
-    grid-area: 2em;
     margin-top: 4em;
     padding: 2.5em 10em;
     border-top: 2px solid $border;
+    background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: 80%;
     &-author{
         @include flex($dir: row, $jc: center, $ai: center);
         gap: .5em;
         font-size: 1.5em;
         color: $primery;
+        
         a:hover{
                 color: $hover;
             }
@@ -22,5 +27,42 @@
             @include flex();
             gap: .5em;
         }
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .app-footer{
+        @include flex($dir: row-reverse, $jc: center, $ai: center);
+        flex-wrap: wrap;
+        margin-top: 4em;
+        padding: 2.5em 10em;
+        border-top: 2px solid $border;
+        background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-position-x: 20%;
+        background-position-y: 80%;
+        &-author{
+            @include flex($dir: row, $jc: center, $ai: center);
+            gap: .5em;
+            font-size: 1.5em;
+            color: $primery;
+            a:hover{
+                    color: $hover;
+                }
+            &-wrap{
+                @include flex();
+            }
+        }
+        &-nav{
+            &-items{
+                @include flex();
+                gap: .5em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .app-footer{
+        // @include flex($dir: row-reverse, $jc: center, $ai: center);
     }
 }
