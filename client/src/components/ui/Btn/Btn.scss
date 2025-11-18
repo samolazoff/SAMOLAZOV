@@ -2,14 +2,17 @@
     margin-top: 1em;
     font-size: 1.8em;
     color: $primery;
-    background-color: $btn-background;
+    background: -webkit-linear-gradient(90deg, #3a7afe,#8a5cf6,#ff6ac1);
+    background: linear-gradient(90deg, #3a7afe,#8a5cf6,#ff6ac1);
     padding: 10px 30px;
     border-radius: 10px;
-    transition: .25s;
+    transition: .1s;
     &:hover{
         background-color: $hover;
+        background: linear-gradient(90deg, $hover);
     }
     &:active{
         background-color: $soft;
+        background: linear-gradient(90deg,  $soft);
     }
 }
