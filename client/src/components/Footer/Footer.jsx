@@ -12,13 +12,6 @@ const Footer = () => {
 
     return (
         <footer className='app-footer'>
-            <div className="app-footer-author-wrap">
-                <div className="social-panel-mini"></div>
-                <div className="app-footer-author">
-                    <time dateTime={today.getFullYear()}>{today.getFullYear()}</time>
-                    <Link to='/'>@Samolazoff</Link>
-                </div>
-            </div>
             <nav className="app-footer-nav">
                 <ul className="app-footer-nav-items">
                     {
@@ -29,7 +22,13 @@ const Footer = () => {
                     }
                 </ul>
             </nav>
-            
+             <div className="app-footer-author-wrap">
+                <div className="app-footer-author">
+                    <time dateTime={today.getFullYear()}>{today.getFullYear()}</time>
+                    <Link to='/'>@Samolazoff</Link>
+                </div>
+                <div className="social-panel-mini">asdasdasd</div>
+            </div>
         </footer>
     );
 };
