@@ -1,0 +1,129 @@
+.app-work{
+    @include flex($jc: flex-start, $ai: flex-start);
+    width: 100%;
+    padding: 2.5em 0;
+    border-top: 2px solid $border;
+    color: $primery;
+    background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 10%;
+    &__subtitle{
+        font-size: 2em;
+    }
+    &-wrap{
+        @include flex($dir: row, $jc: center, $ai: flex-start);
+        flex-wrap: wrap;
+        gap: 2em;
+        margin-top: 4em;
+        background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 90%;
+    }
+    &-item{
+        @include flex($dir: row, $jc: center, $ai: center);
+        width: 535px;
+        height: 250px;
+        padding: 10px;
+        background-color: $soft;
+        border-radius: 20px;
+        color: $primery;
+        &:hover{
+            background-color: $hover;
+            opacity: .2;
+        }
+        a{
+            @include flex($dir: row, $jc: center, $ai: center);
+            gap: 1em;
+            width: 100%;
+        }
+        &-img-wrap{
+            width: 50%;
+        }
+        &__img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        &-discribe{
+            @include flex($jc: flex-start, $ai: flex-start);
+            gap: .5em;
+            width: 50%;
+        }
+        &__title{
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        &__txt{
+            font-size: 1.2em;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .app-work{
+        &-item{
+            width: 430px;
+            height: 200px;
+            &-img-wrap{
+                width: 50%;
+            }
+            &__img{
+                width: 100%;
+                border-radius: 20px;
+            }
+            &-discribe{
+                @include flex($jc: flex-start, $ai: flex-start);
+                gap: .5em;
+                padding-top:0;
+                width: 50%;
+            }
+            &__title{
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+            &__txt{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .app-work{
+        &-wrap{
+            gap: 1em;
+            margin-top: 4em;
+        }
+        &-item{
+            width: 345px;
+            &__title{
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+            &__txt{
+                font-size: 1.0em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-work{
+        background-position-x: 90%;
+        background-position-y: 0%;
+        &-item{
+            width: 90%;
+        }
+        &__subtitle{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app-work{
+        &-item{
+            width: 100%;
+        }
+    }
+}
+
