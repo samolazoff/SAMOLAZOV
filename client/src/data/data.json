@@ -16,5 +16,19 @@
             "title":"blog",
             "link":"/blog"
         }
+    ],
+    "works": [
+        {
+            "img": "/src/assets/images/work/site_1.png",
+            "title": "Samolazov",
+            "description": "This is a multypage portfolio site for Samolazov. He is a web developer and freelancer",
+            "link": "/"
+        },
+        {
+            "img": "/src/assets/images/work/site_1.png",
+            "title": "Samolazov",
+            "description": "This is a multypage portfolio site for Samolazov. He is a web developer and freelancer",
+            "link": "/"
+        }
     ]
 }

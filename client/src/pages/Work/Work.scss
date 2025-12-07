@@ -15,6 +15,7 @@
         @include flex($dir: row, $jc: center, $ai: flex-start);
         flex-wrap: wrap;
         gap: 2em;
+        width: 100%;
         margin-top: 4em;
         background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
         background-repeat: no-repeat;
