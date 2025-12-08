@@ -29,5 +29,21 @@
     }
 }
 .btn-set{
-    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    border-left: 1em solid  $soft;
+    border-right: 1em solid  $soft;
+    cursor: pointer;
+}
+#btn-on{
+    border-top: 2em solid $primery;
+    &:hover{
+        border-top: 2em solid $hover;
+    }
+}
+#btn-off{
+    border-bottom: 2em solid $primery;
+    &:hover{
+        border-bottom: 2em solid $hover;
+    }
 }

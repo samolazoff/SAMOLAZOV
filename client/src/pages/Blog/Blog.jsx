@@ -14,7 +14,7 @@ const itemBlog = (id, data, title, txt, idx) => {
                     <data value={data}>{data}</data>
                     <h3 className="app-blog-item__title">{title}</h3>
                 </div>
-                <button type="button" className='btn-set' id='btn-on' onClick={showContentBlogItem} data-id = {id}>+</button>
+                <button type="button" className='btn-set' id='btn-on' onClick={showContentBlogItem} data-id = {id}></button>
                 <button type="button" className='btn-set d-none' id='btn-off' onClick={showContentBlogItem} data-id = {id}>-</button>
             </div>
             <div className="app-blog-item-content d-none">{txt}</div>
