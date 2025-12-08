@@ -30,5 +30,25 @@
             "description": "This is a multypage portfolio site for Samolazov. He is a web developer and freelancer",
             "link": "/"
         }
+    ],
+    "blog": [
+        {
+            "id": "a123lkm2i34u12m34",
+            "title": "Hello! This is my the first test post!",
+            "data": "08-12-2025",
+            "txt": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus beatae cupiditate ea blanditiis architecto odio perferendis nostrum dolorem quasi inventore consectetur, earum error distinctio similique ipsa nemo ex iure suscipit, consequuntur ipsum deleniti, et nihil. Eum, perferendis iusto molestiae ullam nesciunt earum exercitationem alias reiciendis commodi. Dolor, aliquam mollitia. Amet aut, repellat eos, itaque consectetur debitis doloribus consequuntur esse dolores, necessitatibus exercitationem corporis iste ex error. Dolor numquam qui accusamus ullam alias libero omnis officiis maxime similique aut deleniti, saepe vel aliquid dignissimos commodi autem facilis velit distinctio earum. Soluta, dolor! Aliquid unde officia, quaerat quae ratione excepturi a, molestias cupiditate esse tempore porro saepe sed impedit praesentium! Itaque, illo modi. Eius maiores suscipit ad, aspernatur voluptas omnis consequuntur placeat!"
+        },
+        {
+            "id": "a123lkm2i34DSDSDSDSu12m34",
+            "title": "Hello! This is my the first test post!",
+            "data": "08-12-2025",
+            "txt": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus beatae cupiditate ea blanditiis architecto odio perferendis nostrum dolorem quasi inventore consectetur, earum error distinctio similique ipsa nemo ex iure suscipit, consequuntur ipsum deleniti, et nihil. Eum, perferendis iusto molestiae ullam nesciunt earum exercitationem alias reiciendis commodi. Dolor, aliquam mollitia. Amet aut, repellat eos, itaque consectetur debitis doloribus consequuntur esse dolores, necessitatibus exercitationem corporis iste ex error. Dolor numquam qui accusamus ullam alias libero omnis officiis maxime similique aut deleniti, saepe vel aliquid dignissimos commodi autem facilis velit distinctio earum. Soluta, dolor! Aliquid unde officia, quaerat quae ratione excepturi a, molestias cupiditate esse tempore porro saepe sed impedit praesentium! Itaque, illo modi. Eius maiores suscipit ad, aspernatur voluptas omnis consequuntur placeat!"
+        },
+        {
+            "id": "a123lkmASDASDADASD2i34DSDSDSDSu12m34",
+            "title": "Hello! This is my the first test post!",
+            "data": "08-12-2025",
+            "txt": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus beatae cupiditate ea blanditiis architecto odio perferendis nostrum dolorem quasi inventore consectetur, earum error distinctio similique ipsa nemo ex iure suscipit, consequuntur ipsum deleniti, et nihil. Eum, perferendis iusto molestiae ullam nesciunt earum exercitationem alias reiciendis commodi. Dolor, aliquam mollitia. Amet aut, repellat eos, itaque consectetur debitis doloribus consequuntur esse dolores, necessitatibus exercitationem corporis iste ex error. Dolor numquam qui accusamus ullam alias libero omnis officiis maxime similique aut deleniti, saepe vel aliquid dignissimos commodi autem facilis velit distinctio earum. Soluta, dolor! Aliquid unde officia, quaerat quae ratione excepturi a, molestias cupiditate esse tempore porro saepe sed impedit praesentium! Itaque, illo modi. Eius maiores suscipit ad, aspernatur voluptas omnis consequuntur placeat!"
+        }
     ]
 }

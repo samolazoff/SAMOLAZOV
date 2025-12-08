@@ -6,7 +6,7 @@ import TitleBlock from '../../components/ui/TitleBlock/TitleBlock';
 
 import {works} from '../../data/data.json';
 
-const workItem = (link, title, description, img, idx) => {
+function workItem(link, title, description, img, idx){
     return (
         <li className='app-work-item' key={idx}>
             <Link to={link}>
