@@ -24,7 +24,10 @@
         &-content{
             width: 100%;
             margin-top: 2em;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+
         }
     }
 }
@@ -45,5 +48,52 @@
     border-bottom: 2em solid $primery;
     &:hover{
         border-bottom: 2em solid $hover;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .app-blog{
+            &-content{
+                font-size: 1.2em;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .app-blog{
+        &-wrap{
+            margin-top: 2em;
+        }
+        &-item{
+            &-show{
+                @include flex($dir: row,);
+                gap: 2em;
+                font-size: 1.2em;
+            }
+            &-content{
+                font-size: 1.2em;
+            }
+        }
+    }
+    .btn-set{
+        width: 1em;
+        height: 1em;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 576px) {
+    .app-blog{
+        &-item{
+            &-show{
+                @include flex($dir: column, $ai: flex-start);
+                gap: 1em;
+                font-size: 1.2em;
+            }
+            &-content{
+                font-size: 1em;
+            }
+        }
+    }
+    .btn-set{
+        width: .5em;
+        height: .5em;
     }
 }

@@ -8,7 +8,6 @@ function showContentBlogItem(event){
         findElm.classList.toggle('d-none');
         btnOn.classList.toggle('d-none');
         btnOff.classList.toggle('d-none');
-        console.log(findElm);
     }
 }
 export default showContentBlogItem;
