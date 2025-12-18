@@ -1,0 +1,25 @@
+.contacts-form{
+    @include flex();
+    gap: 1em;
+    width: 640px;
+    label{
+        width: 100%;
+        text-align: center;
+        input{
+            height: 38px;
+        }
+        textarea{
+           height: 380px;
+        }
+        input, textarea{
+            width: 80%;
+            padding: 1em;
+            border-color: $border;
+            border-radius: 10px;
+            &:focus-visible, &:focus, &:active{
+                border-color: $hover;
+                border-image: none;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import './Contacts.scss';
 
 import TitleBlock from '../../components/ui/TitleBlock/TitleBlock';
 import ContactsSocial from '../../components/ContactsSocial/ContactsSocial';
+import ContactsForm from '../../components/ContactsForm/ContactsForm';
 
 import imgEmail from '../../assets/icons/icons8-email.png';
 import imgTelegram from '../../assets/icons/icons8-telegram.svg';
@@ -29,18 +30,7 @@ const Contacts = () => {
                     </ul>
                     <ContactsSocial/>
                 </div>
-                <form className='contacts-form' method="post">
-                    <label htmlFor="nameUserContactForm">
-                        <input type="text" name="nameUserContactForm" id="nameUserContactForm"/>
-                    </label>
-                    <label htmlFor="emailUserContactForm">
-                        <input type="email" name="emailUserContactForm" id="emailUserContactForm"/>
-                    </label>
-                    <label htmlFor="txtUserContactForm">
-                        <textarea name="txtUserContactForm" id="txtUserContactForm"></textarea>
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
+                <ContactsForm/>
             </div>
         </section>
     );
