@@ -3,4 +3,28 @@
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
+    &-wrap{
+        @include flex($dir: row);
+        margin-top: 4em;
+    }
+    &-main{
+        @include flex();
+        gap: 1em;
+        width: 300px;
+        padding: 1em;
+    }
+    &-list{
+        @include flex($ai: flex-start);
+        gap: 1em;
+    }
+    &-item{
+        @include flex($dir: row);
+        gap: 1em;
+        &__img{
+            width: 36px;
+        }
+        &__txt{
+           font-size: 1.5em;
+        }
+    }
 }
