@@ -1,6 +1,7 @@
 import './Contacts.scss';
 
 import TitleBlock from '../../components/ui/TitleBlock/TitleBlock';
+import ContactsSocial from '../../components/ContactsSocial/ContactsSocial';
 
 const Contacts = () => {
     return (
@@ -22,9 +23,7 @@ const Contacts = () => {
                             <span className="app-contacts-item__txt">samalazau.raman@proton.me</span>
                         </li>
                     </ul>
-                    <div className="contacts-social">
-                        
-                    </div>
+                    <ContactsSocial/>
                 </div>
                 <form className='contacts-form' method="post">
                     <label htmlFor="nameUserContactForm">

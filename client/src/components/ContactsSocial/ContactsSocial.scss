@@ -1,0 +1,10 @@
+.contacts-social{
+    @include flex ($dir: row);
+    width: 200px;
+    &__img{
+        width: 36px;
+    }
+    &__link:hover{
+        opacity: .5;
+    }
+}
