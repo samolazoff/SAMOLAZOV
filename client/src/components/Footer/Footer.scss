@@ -20,6 +20,7 @@
             }
         &-wrap{
             @include flex();
+            gap: 1em;
         }
     }
     &-nav{

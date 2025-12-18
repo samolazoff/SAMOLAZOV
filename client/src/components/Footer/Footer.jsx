@@ -3,8 +3,9 @@ import './Footer.scss';
 import {Link} from 'react-router';
 
 import NavItem from '../NavItem/NavItem';
+import ContactsSocial from '../ContactsSocial/ContactsSocial';
 
-import {navigation} from '../../data/data.json'
+import {navigation} from '../../data/data.json';
 
 const Footer = () => {
 
@@ -27,7 +28,7 @@ const Footer = () => {
                     <time dateTime={today.getFullYear()}>{today.getFullYear()}</time>
                     <Link to='/'>@Samolazoff</Link>
                 </div>
-                <div className="social-panel-mini">asdasdasd</div>
+                <ContactsSocial/>
             </div>
         </footer>
     );
