@@ -29,14 +29,15 @@
     }
 }
 .mini-pages{
-    @include flex($dir: row);
+    @include flex($dir: row, $ai: space-between);
     gap: 1em;
     width: 100%;
+    height: 550px;
     padding: 2.5em 0;
     border-top: 2px solid $border;
     background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
     background-repeat: no-repeat;
-    background-position-x: 60%;
+    background-position-x: 70%;
     background-position-y: 100%;
     .title-block-mini{
         width: 100%;
@@ -45,12 +46,13 @@
     }
     .work-mini{
         @include flex();
-        flex-grow: 8;
+        flex-grow: 3;
         padding-right: 1em;
         border-right: 2px solid $border;
     }
     .blog-mini{
-        @include flex();
+        @include flex($jc: space-between);
+        width: 300px;
         flex-grow: 1;
         &-list{
             @include flex();
@@ -68,6 +70,36 @@
             data{
                 font-weight: 700;
             }
+        }
+    }
+    .work-mini-content{
+        height: 100%;
+        @include flex($ai: space-between);
+        a{
+            @include flex($dir: row, $ai: space-between);
+            width: 800px;
+            padding: 1em;
+            border: 2px solid $border;
+            border-radius: 10px;
+            background-color: $soft;
+        }
+        &-img-wrap{
+            text-align: center;
+        }
+        &__img{
+            width: 70%;
+        }
+        &-discribe{
+            @include flex($ai: flex-start);
+            gap: .5em;
+            font-size: 1.5em;
+        }
+        &__title{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        &__txt{
+            font-size: 1em;
         }
     }
 }

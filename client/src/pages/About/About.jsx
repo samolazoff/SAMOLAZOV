@@ -40,7 +40,17 @@ const About = () => {
             <section className="mini-pages">
                 <div className="work-mini">
                     <h3 className="title-block-mini">Last work</h3>
-                    
+                    <div className="work-mini-content">
+                        <Link to={works[0].link}>
+                            <div className="work-mini-content-img-wrap">
+                                <img src={works[0].img} alt="img_site" className="work-mini-content__img" />
+                            </div>
+                            <div className="work-mini-content-discribe">
+                                <h3 className="work-mini-content__title">{works[0].title}</h3>
+                                <span className="work-mini-content__txt">{works[0].description}</span>
+                            </div>
+                        </Link>
+                    </div>
                     <Btn tage='link' href='/work' txt='More Works'/>
                 </div>
                 <div className="blog-mini">
