@@ -28,8 +28,61 @@
         }
     }
 }
+.mini-pages{
+    @include flex($dir: row);
+    gap: 1em;
+    width: 100%;
+    padding: 2.5em 0;
+    border-top: 2px solid $border;
+    background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: 100%;
+    .title-block-mini{
+        width: 100%;
+        padding-left: 20%;
+        font-size: 2.5em;
+    }
+    .work-mini{
+        @include flex();
+        flex-grow: 8;
+        padding-right: 1em;
+        border-right: 2px solid $border;
+    }
+    .blog-mini{
+        @include flex();
+        flex-grow: 1;
+        &-list{
+            @include flex();
+            gap: 1em;
+        }
+        &-item{
+            @include flex($ai: flex-start);
+            width: 100%;
+            gap: .5em;
+            padding: 0.5em 1em;
+            font-size: 1.5em;
+            border: 2px solid $border;
+            border-radius: 10px;
+            background-color: $soft;
+            data{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 992px) {
-    
     .app-about{
         background-position-x: 50%;
         background-position-y: 50%;

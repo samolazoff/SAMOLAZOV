@@ -1,4 +1,6 @@
 .app-blog{
+        padding: 2.5em 0;
+        border-top: 2px solid $border;
     &-wrap{
         @include flex();
         gap: 1em;
