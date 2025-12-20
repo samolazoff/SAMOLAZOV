@@ -29,10 +29,9 @@
     }
 }
 .mini-pages{
-    @include flex($dir: row, $ai: space-between);
+    @include flex($dir: row, $ai: space-between, $jc: space-between);
     gap: 1em;
     width: 100%;
-    height: 550px;
     padding: 2.5em 0;
     border-top: 2px solid $border;
     background-image: url('../../assets/images/footer/colorful-removebg-preview.png');
@@ -41,19 +40,51 @@
     background-position-y: 100%;
     .title-block-mini{
         width: 100%;
+        margin-bottom: 1em;
         padding-left: 20%;
         font-size: 2.5em;
     }
     .work-mini{
-        @include flex();
-        flex-grow: 3;
+        position: relative;
+        @include flex($jc: flex-start);
+        width: 100%;
         padding-right: 1em;
         border-right: 2px solid $border;
     }
+    .work-mini-content{
+        @include flex($jc: flex-start);
+        a{
+            @include flex($dir: row, $ai: space-between);
+            gap: 2em;
+            padding: 1em;
+            border: 2px solid $border;
+            border-radius: 10px;
+            background-color: $soft;
+        }
+        &-img-wrap{
+            text-align: center;
+        }
+        &__img{
+            width: 320px;
+        }
+        &-discribe{
+            @include flex($ai: flex-start);
+            gap: .5em;
+            padding: 1em;
+            font-size: 1.5em;
+        }
+        &__title{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        &__txt{
+            font-size: 1em;
+        }
+    }
     .blog-mini{
-        @include flex($jc: space-between);
-        width: 300px;
-        flex-grow: 1;
+        position: relative;
+        @include flex($jc: flex-start);
+        width: 550px;
         &-list{
             @include flex();
             gap: 1em;
@@ -72,48 +103,42 @@
             }
         }
     }
-    .work-mini-content{
-        height: 100%;
-        @include flex($ai: space-between);
-        a{
-            @include flex($dir: row, $ai: space-between);
-            width: 800px;
-            padding: 1em;
-            border: 2px solid $border;
-            border-radius: 10px;
-            background-color: $soft;
-        }
-        &-img-wrap{
-            text-align: center;
-        }
-        &__img{
-            width: 70%;
-        }
-        &-discribe{
-            @include flex($ai: flex-start);
-            gap: .5em;
-            font-size: 1.5em;
-        }
-        &__title{
-            font-size: 1.2em;
-            font-weight: 600;
-        }
-        &__txt{
-            font-size: 1em;
-        }
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
+.blog-mini .app-btn, .work-mini .app-btn {
+    position: absolute;
+    bottom: -70px;
+}
+@media screen and (max-width: 1200px) {
+    .mini-pages{
+        .work-mini-content{
+            a{
+                gap: .5em;
+            }
+            &__img{
+                width: 280px;
+            }
+            &-discribe{
+                gap: .5em;
+                padding: .25em;
+            }
+            &__title{
+                font-size: 1.2em;
+            }
+            &__txt{
+                font-size: 1em;
+            }
+        }
+        .blog-mini{
+            width: 500px;
+            &-list{
+                gap: 1em;
+            }
+            &-item{
+                font-size: 1.5em;
+            }
+        }
+    }   
+}
 @media screen and (max-width: 992px) {
     .app-about{
         background-position-x: 50%;
@@ -122,6 +147,40 @@
             font-size: 1.3em;
         }
     }
+    .mini-pages{
+        .work-mini-content{
+            a{
+                @include flex();
+            }
+            &-img-wrap{
+                width: 100%;
+            }
+            &__img{
+                width: 100%;
+            }
+            &__title{
+                font-size: 1em;
+            }
+            &__txt{
+                font-size: .8em;
+            }
+        }
+        .blog-mini{
+            width: 400px;
+            &-list{
+                width: 100%;
+                gap: 1em;
+            }
+            &-item{
+                width: 100%;
+                font-size: 1.2em;
+            }
+        }
+        .title-block-mini{
+            margin-bottom: .5em;
+            font-size: 2em;
+        }
+    }  
 }
 
 @media screen and (max-width: 768px) {
@@ -131,13 +190,55 @@
             width: 250px;
         }
     }
-
+    .mini-pages{
+        @include flex();
+        .work-mini{
+            padding-bottom: 6em;
+            padding-right: none;
+            border-right: none;
+            border-bottom: 2px solid $border;
+            .app-btn{
+                bottom: 30px
+            }
+        }
+        .work-mini-content{
+            a{
+                @include flex();
+            }
+            &-img-wrap{
+                width: 100%;
+            }
+            &__img{
+                width: 100%;
+            }
+            &__title{
+                font-size: 1em;
+            }
+            &__txt{
+                font-size: .8em;
+            }
+        }
+        .blog-mini{
+            width: 100%;
+            &-list{
+                gap: 1em;
+            }
+            &-item{
+                @include flex($dir: row, $jc: flex-start);
+                font-size: 1.2em;
+            }
+        }
+        .title-block-mini{
+            margin-bottom: 1em;
+            font-size: 2em;
+        }
+    }  
 }
 
 @media screen and (max-width: 576px) {
     .app-about{
         position: relative;
-        padding-top: 150px;
+        padding: 160px 0;
         @include flex($jc: center, $ai: center);
         &-content{
             position: relative;

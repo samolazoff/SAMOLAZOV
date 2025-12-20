@@ -21,10 +21,7 @@ const miniBlogPost = (item) => {
         </li>
     )
 }
-
-
 const About = () => {
-
     return (
         <>
             <section className='app-about'>
@@ -54,7 +51,7 @@ const About = () => {
                     <Btn tage='link' href='/work' txt='More Works'/>
                 </div>
                 <div className="blog-mini">
-                    <h3 className="title-block-mini">News</h3>.
+                    <h3 className="title-block-mini">News</h3>
                     <ul className="blog-mini-list">
                         {
                             blog.map((itm) => {
