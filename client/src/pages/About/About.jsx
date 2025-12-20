@@ -5,6 +5,7 @@ import {Link} from 'react-router';
 import TitleBlock from '../../components/ui/TitleBlock/TitleBlock';
 import SubtitleBlock from '../../components/ui/SubtitleBlock/SubtitleBlock';
 import Btn from '../../components/ui/Btn/Btn';
+import Contacts from'../../pages/Contacts/Contacts'
 
 import imgMine from '../../assets/images/about/5373046436129799659.png';
 
@@ -64,6 +65,7 @@ const About = () => {
                     <Btn tage='link' href='/blog' txt='More News'/>
                 </div>
             </section>
+            <Contacts/>
         </>
         
     );
