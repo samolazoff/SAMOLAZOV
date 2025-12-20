@@ -10,7 +10,7 @@ import imgWhatsapp from '../../assets/icons/icons8-whatsapp.svg';
 
 const Contacts = () => {
     return (
-        <section className='app-contacts'>
+        <section className='app-contacts' id='contacts-form'>
             <TitleBlock txt='Contacts'/>
             <div className="app-contacts-wrap">
                 <div className="app-contacts-main">

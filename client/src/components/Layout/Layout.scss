@@ -10,7 +10,9 @@
 .d-none{
     display: none !important;
 }
-
+.app-main{
+    min-height: 80vh;
+}
 @media screen and (max-width: 1200px) {
     #root{
         max-width: 1200px;
